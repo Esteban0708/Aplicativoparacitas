@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super</title>
+    <link rel="stylesheet" href="/ESTILOS/menusuper.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li class="contenido"><a href="/HTML/vistaprincipalSUPER.html">Inicio</a></li>
+                <li class="contenido"><a href="/HTML/CrearUsuario.html">Usuario</a></li>
+                <li class="contenido"><a href="javascript:void(0);">Rol</a>
+                    <ul class="submenu">
+                        <li class="contenido"><a href="/HTML/CrearRol.html">Crear rol</a></li>
+                        <li class="contenido"><a href="javascript:void(0);">Visualizar rol</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">Historial Usuarios</a></li>
+                <!-- Aquí está el nuevo elemento de lista para el perfil del usuario -->
+                <li class="perfilusuario">
+                    <a href="javascript:void(0);">Esteban ramos</a>
+                    <ul class="submenu">
+                        <li class="contenido"><a href="javascript:void(0);">Mis datos</a></li>
+                        <li class="contenido"><a href="javascript:void(0);">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <img src="/imagenes/Agenda.gif" alt="">
+    </header>
+
+    <!-- Contenedor donde se cargará el contenido dinámicamente -->
+    <div id="main-content"></div>
+
+
+    <script src="/JS/menu.js"></script>
+</body>
+
+</html>

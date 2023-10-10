@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olvidó su contraseña</title>
+    <link rel="stylesheet" href="/ESTILOS/olvidocontraseña.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recuperar contraseña</h1>
+        <p>Ingresa el número de celular con el que se registró para recuperar tu cuenta.</p>
+        <form id="formularioRecuperacion" action="/sendCode" method="POST">
+            <input type="tel" placeholder="+573102268473" id="celular" name="phoneNumber" required>
+            <div class="botones">
+                <a href="iniciosesion.html#Login" class="link">Cancelar</a>
+                <button type="submit" id="enviarCodigo" class="link">Enviar Código</button>
+            </div>
+        </form>
+    </div>
+    <script src="/JS/enviarCodigo.js"></script>
+</body>
+</html>
