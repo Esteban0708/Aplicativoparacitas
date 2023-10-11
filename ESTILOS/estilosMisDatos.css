@@ -8,11 +8,33 @@
 
 .contenedorinfo {
     position: absolute;
-    top: 350px; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Ajustar para un centrado perfecto */
-    z-index: -1; /* Mandar al fondo */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
     width: 1000px;
-    height: 500px;
+    height: 450px;
     border: 1px solid #777;
+}
+
+.contenedorinfo h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.inputs {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 columnas de igual ancho */
+    gap: 40px;  /* Espaciado entre los elementos */
+}
+
+/* Colocamos explícitamente el 7mo input en la cuarta columna y segunda fila */
+.inputs input:nth-child(10) {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
 }
