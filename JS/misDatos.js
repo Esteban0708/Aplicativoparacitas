@@ -1,26 +1,27 @@
-console.log("archivo JS cargado");
-function mostrarModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'flex';
-        console.log('El botón ha sido presionado');
-    }
-}
+function initializeMisDatos() {
+    const botonEditarContra = document.getElementById("botonEditar");
+    const modalContra = document.getElementById("modalEdicionContra");
 
-function cerrarModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = 'none';
+    function mostrarModal() {
+        modalContra.style.display = "flex";
     }
-}
 
-// Cerrar el modal al hacer clic fuera del contenido del modal
-document.addEventListener('click', function(event) {
-    const modal = document.getElementById('modalEdicionContra');
-    if (modal && modal.style.display === 'flex') {
-        const modalContent = modal.querySelector('.modal-content');
+    window.cerrarModal = function(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) modal.style.display = "none";
+    }
+
+    botonEditarContra.addEventListener("click", mostrarModal);
+
+    modalContra.addEventListener("click", function(event) {
+        const modalContent = modalContra.querySelector(".modal-content");
         if (!modalContent.contains(event.target)) {
-            cerrarModal('modalEdicionContra');
+            cerrarModal("modalEdicionContra");
         }
-    }
-});
+    });
+
+    const modalContent = modalContra.querySelector(".modal-content");
+    modalContent.addEventListener("click", function(event) {
+        event.stopPropagation();
+    });
+}

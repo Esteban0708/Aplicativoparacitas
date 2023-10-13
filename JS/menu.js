@@ -1,41 +1,53 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Selecciona todos los enlaces dentro de .menu
-    var links = document.querySelectorAll(".menu a");
+// Función para inicializar los eventos de la vista "Mis Datos"
+function initializeMisDatos() {
+    // Aquí pondrás el código para inicializar los eventos 
+    // de los botones "Editar" y otros elementos interactivos.
+    
+    const botonEditar = document.getElementById("botonEditar");
+    const modalEdicionContra = document.getElementById("modalEdicionContra");
+
+    botonEditar.addEventListener("click", function() {
+        modalEdicionContra.style.display = "block";
+    });
+
+    // Puedes agregar otros eventos aquí si es necesario...
+}
+
+// Función para cerrar el modal
+function cerrarModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.style.display = "none";
+}
+
+// Lógica para manejar los clics en los ítems del menú y cargar contenido dinámicamente
+window.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".menu a");
 
     links.forEach(function(link) {
         link.addEventListener("click", function(e) {
-            e.preventDefault();  // Evita la navegación
+            e.preventDefault();
 
-            // Elimina la clase active de todos los enlaces
-            links.forEach(function(innerLink) {
-                innerLink.classList.remove("active");
-            });
-
-            // Añade la clase active al enlace seleccionado
+            links.forEach(innerLink => innerLink.classList.remove("active"));
             this.classList.add("active");
 
-            // Si el enlace es "Inicio", muestra la imagen y borra cualquier contenido anterior
             if (this.href.includes("/HTML/vistaprincipalSUPER.html")) {
-                var img = document.querySelector("img");
-                if (img) {
-                    img.style.display = "block";  // Muestra la imagen
-                }
-                document.getElementById("main-content").innerHTML = "";  // Borra el contenido anterior
-                return;  // Termina el evento aquí
+                const img = document.querySelector("img");
+                if (img) img.style.display = "block";
+                document.getElementById("main-content").innerHTML = "";
+                return;
             }
 
-            // Para cualquier otro enlace que no sea "javascript:void(0);"
             if (this.href && !this.href.includes("javascript:void(0);")) {
                 fetch(this.href)
                     .then(response => response.text())
                     .then(data => {
-                        // Reemplaza el contenido anterior con el nuevo contenido cargado
                         document.getElementById("main-content").innerHTML = data;
 
-                        // Opcional: Puedes ocultar la imagen si así lo deseas para otros enlaces
-                        var img = document.querySelector("img");
-                        if (img) {
-                            img.style.display = "none";
+                        const img = document.querySelector("img");
+                        if (img) img.style.display = "none";
+
+                        if (this.href.includes("/HTML/MisDatos.html")) {
+                            initializeMisDatos();
                         }
                     })
                     .catch(error => console.error(error));
