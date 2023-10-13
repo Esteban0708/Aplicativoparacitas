@@ -6,47 +6,7 @@
     font-family: sans-serif;
 }
 
-.modal {
-    
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;      
-}
 
-
-.modal-content {
-    background-color: red;
-    max-width: 90%; 
-    max-height: 80%; 
-    padding: 20px;
-    overflow-y: auto; 
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    height: 50%;
-    width: 60%; /* Ajusta según tus necesidades */
-    border-radius: 10px;
-}
-
-.modal-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.modal-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 20px;
-    
-}
 button {
     margin-top: 10px;
     padding: 5px 10px;
@@ -70,7 +30,7 @@ button:hover {
     width: 1000px;
     height: 550px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
-
+    
 }
 
 .contenedorinfo h1 {
@@ -152,4 +112,65 @@ input{
 
 .btn-editar:hover {
     background-color: #011b37; /* Puedes cambiar a tu color preferido para el hover */
+}
+.modal {
+    
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;      
+}
+
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    overflow-y: auto; 
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 50%;
+    width: 60%; /* Ajusta según tus necesidades */
+    border-radius: 10px;
+}
+#modalInputContra{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 350px;
+}
+.modal-buttons {
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.modal-buttons .idModificacion {
+    /* Agrandar el botón */
+    padding: 10px 15px;  /* espacio interno alrededor del texto */
+    font-size: 13px;     /* tamaño de la letra */
+    
+    /* Cambiar el estilo de la letra */
+    font-family: 'Arial', sans-serif;  /* tipo de letra */
+    font-weight: bold;                 /* letra en negritas */
+    color: white;                     /* color de la letra */
+    background-color: #007BFF;        /* color de fondo del botón */
+    border-radius: 5px;               /* bordes redondeados */
+    border: none;                     /* quitar bordes por defecto */
+    cursor: pointer;                  /* el cursor se convierte en mano al pasar sobre el botón */
+    transition: background-color 0.3s; /* efecto de transición al pasar el ratón sobre el botón */
+}
+.modal-buttons .idModificacion:hover {
+    background-color: #032141;
 }
