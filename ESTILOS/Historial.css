@@ -24,10 +24,17 @@ body {
     width: 100px;
     font-family: 'Times New Roman', Times, serif;
 }
+.contenedor {
+    width: 1000px;
+    margin: 0 auto; /* centra horizontalmente */
+    height: 450px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .container {
-    position: relative;
-    top: 20px;
-    left: 10px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
     height: 50px; 
     width: 5px;
 }

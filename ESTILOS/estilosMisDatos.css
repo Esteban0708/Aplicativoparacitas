@@ -113,7 +113,7 @@ input{
 .btn-editar:hover {
     background-color: #011b37; /* Puedes cambiar a tu color preferido para el hover */
 }
-.modal {
+.modal{
     display: none;
     position: fixed;
     top: 0;
