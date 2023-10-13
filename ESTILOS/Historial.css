@@ -22,6 +22,7 @@ body {
     left: 20px;
     height: 50px; 
     width: 100px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .container {
     position: relative;

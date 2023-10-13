@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+}
+.navegacion{
+    width: 1000px;
+    margin: 0px auto; 
+    border-bottom: 1px solid black;   
+}
+.navegacion ul{
+    list-style: none;
+}
+.titulo{
+    position: relative;
+    top: 150px;
+    left: 400px;
+    height: 50px; 
+    width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu > li{
+   position: relative;
+   display: inline-block;
+
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    font-family: "open sans";
+    font-size:20px;
+    color: #353535;
+    text-decoration: none;
+    border-radius: 25px; 
+}
+.menu li a:hover{
+    background: rgba(5, 5, 165, 0.642);
+    color: white;
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el cursor por encima */
+    transition: all .3s;
+}
+.submenu{
+    position: absolute;
+    background: white;
+    border: 2px solid #bcbcbc;
+    width:180%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    border-radius: 25px; 
+}
+.submenu li a{
+    display: block;   
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-family: 'open sans';
+    text-decoration: none;
+    border-radius: 25px; 
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    
+}
+img{
+    position: relative;
+    left: 900px;
+    top: 60px;
+    width: 400px;
+    background-size: cover;
+}
+
+.perfilusuario{
+    position: relative;
+    top: 0; 
+    right: 0; 
+}
+
+.navegacion .menu {
+    display: flex;
+    align-items: center; 
+}
+
+.perfilusuario {
+    margin-left: auto;
+}
+
+.submenu {
+    width: 130px;
+}
+.contenido{
+    display: none;
+}
+
+.contenido {
+    display: block;
+}
+.item-seleccionado {
+    background-color: blue;
+    color: white;
+}
+
+.menu li a.active {
+    background-color: rgba(5, 5, 165, 0.642);
+    color: white;
+}
+input, textarea {
+    width: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2e0;
+    font-size: 16px;
+    outline: none;
+    border-radius: 15px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+label {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+
+
+

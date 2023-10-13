@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="/ESTILOS/EstiloPrincipalAdmin.css">
+</head>
+    <body>
+        <header>
+            <h1 class="titulo">Datos de la empresa</h1>
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li class="contenido"><a href="/HTML/VistaPrincipalAdmin.html">Inicio</a></li>
+                    <li class="contenido"><a href="/HTML/CrearUsuario.html">Usuario</a>
+                        <ul class="submenu">
+                            <li class="contenido"><a href="/HTML/CrearUsuario.html">Crear Usuario</a></li>
+                            <li class="contenido"><a href="#">Visualizar Usuario</a></li>
+                        </ul>
+                    </li>
+                    <li class="contenido"><a href="javascript:void(0);">Rol</a>
+                        <ul class="submenu">
+                            <li class="contenido"><a href="/HTML/CrearRol.html">Crear rol</a></li>
+                            <li class="contenido"><a href="/HTML/VisualizarRol.html">Visualizar rol</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/HTML/Historial.html">Historial</a></li>
+                    <li><a href="">Agenda</a></li>
+                    <li class="perfilusuario">
+                        <a href="javascript:void(0);">Esteban ramos</a>
+                        <ul class="submenu">
+                            <li class="contenido"><a href="/HTML/MisDatos.html">Mis datos</a></li>
+                            <li class="contenido"><a href="javascript:void(0);">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <img src="/imagenes/Agenda.gif" alt="">
+        </header>
+        <div id="main-content"></div>
+        <script src="/JS/menu.js"></script>
+        <form>
+            <label for="nombre">Nombre de la Empresa:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+    
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="sitio-web">Sitio Web:</label>
+            <input type="url" id="sitio-web" name="sitio-web"><br>
+    
+            <label for="descripcion">Descripción de la Empresa:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
+        </form>
+    </body>
+</html>
