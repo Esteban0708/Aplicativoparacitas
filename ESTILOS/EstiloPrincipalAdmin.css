@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background: white;
+    background: linear-gradient(to left, rgb(4, 23, 83), rgb(247, 248, 250));
 }
 .navegacion{
     width: 1000px;
@@ -36,9 +36,9 @@ body{
 .menu > li > a{
     display: block;
     padding: 15px 20px;
-    font-family: "open sans";
+    font-family: 'Roboto', sans-serif;
     font-size:20px;
-    color: #353535;
+    color: #000000;
     text-decoration: none;
     border-radius: 25px; 
 }
@@ -80,6 +80,7 @@ img{
     height: 300px;
     width: 300px;
     background-size: cover;
+    border-radius: 150px;
 }
 
 .perfilusuario{

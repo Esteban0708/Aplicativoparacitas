@@ -23,12 +23,12 @@ button:hover {
 
 .contenedorinfo {
     position: absolute;
-    top: 62%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     width: 1000px;
-    height: 550px;
+    height: 495px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
     
 }
