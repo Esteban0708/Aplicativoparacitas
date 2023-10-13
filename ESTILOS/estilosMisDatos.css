@@ -114,7 +114,6 @@ input{
     background-color: #011b37; /* Puedes cambiar a tu color preferido para el hover */
 }
 .modal {
-    
     display: none;
     position: fixed;
     top: 0;
@@ -126,8 +125,6 @@ input{
     justify-content: center;
     align-items: center;      
 }
-
-
 .modal-content {
     position: absolute;
     top: 50%;

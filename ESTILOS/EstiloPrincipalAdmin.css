@@ -9,20 +9,24 @@ body{
     background: white;
 }
 .navegacion{
+    z-index: 2000;
+    position: relative;
     width: 1000px;
-    margin: 0px auto; 
+    margin: 40px auto; 
     border-bottom: 1px solid black;   
 }
 .navegacion ul{
     list-style: none;
 }
-.titulo{
+.container .titulo{
     position: relative;
-    top: 150px;
-    left: 400px;
+    top: 10px;
+    padding: 10px;
+    left: 190px;
     height: 50px; 
     width: 600px;
     font-family: 'Times New Roman', Times, serif;
+
 }
 .menu > li{
    position: relative;
@@ -68,10 +72,12 @@ body{
     
 }
 img{
+    background: red;
     position: relative;
     left: 900px;
-    top: 60px;
-    width: 400px;
+    top: 59px;
+    height: 300px;
+    width: 300px;
     background-size: cover;
 }
 
@@ -91,14 +97,12 @@ img{
 }
 
 .submenu {
-    width: 130px;
-}
-.contenido{
-    display: none;
+    width: 170px;
 }
 
 .contenido {
     display: block;
+   
 }
 .item-seleccionado {
     background-color: blue;
@@ -109,28 +113,70 @@ img{
     background-color: rgba(5, 5, 165, 0.642);
     color: white;
 }
-input, textarea {
-    width: 10%;
+.container {
+    position: absolute;
+    top: 55%;
+    left: 38%;
+    transform: translate(-50%, -50%); 
+    width: 700px;
+    height: 370px;
+    font-family: Arial, sans-serif;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.line input[type="text"] {
+    flex: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.line input[type="button"] {
+    background: none;
+    border: none;
+    cursor: default;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered input {
+    width: 80%;
+    margin: 5px auto;
+}
+input{
+    width: 110%;
     margin-top: 10px;
     padding: 10px;
     border: none;
-    background: #f2f2f2e0;
+    background: #f2f2f2;
     font-size: 16px;
     outline: none;
     border-radius: 15px;
 }
-
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+.inputs{
+    position: relative;
+    top:30px;
+}
+#area {
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    width: 90%;
+    height: 100px;
+    resize: none;
+    text-align: center; 
+    line-height: 90px; /* Esto es lo que centra el placeholder verticalmente */
 }
 
-label {
-    text-align: right;
-    margin-bottom: 5px;
+#area::placeholder {
+    text-align: center; 
 }
-
-
-
-
