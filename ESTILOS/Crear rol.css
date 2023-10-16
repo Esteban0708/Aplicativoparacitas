@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left, rgb(4, 23, 83), rgb(247, 248, 250));
+}
+.navegacion{
+    width: 1000px;
+    margin: 40px auto; 
+    border-bottom: 1px solid black;   
+}
+.navegacion ul{
+    
+    list-style: none;
+}
+.titulo{
+    position: relative;
+    top: 170px;
+    padding: 10px;
+    left: 250px;
+    height: 50px; 
+    width: 600px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.menu > li{
+   position: relative;
+   display: inline-block;
+
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 25px; 
+}
+.menu li a:hover{
+    background: rgba(5, 5, 165, 0.642);
+    color: white;
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el cursor por encima */
+    transition: all .3s;
+}
+.submenu{
+    z-index: 1;
+    position: absolute;
+    background: white;
+    border: 2px solid #bcbcbc;
+    width:180%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    border-radius: 25px; 
+}
+.submenu li a{
+    display: block;   
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-family: 'open sans';
+    text-decoration: none;
+    border-radius: 25px; 
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.navegacion .menu {
+    display: flex;
+    align-items: center; 
+}
+
+.perfilusuario {
+    margin-left: auto;
+}
+
+.submenu {
+    width: 170px;
+}
+
+.contenido {
+    display: block;
+   
+}
+.item-seleccionado {
+    background-color: blue;
+    color: white;
+}
+
+.menu li a.active {
+    background-color: rgba(5, 5, 165, 0.642);
+    color: white;
+}
+label {
+    font-family: 'Arial', sans-serif;
+    display: block;
+    margin-top: 10px;
+    flex: 1;
+}
+.container{
+    position: relative;
+    top: 100px;
+    left: 262px;
+}
+.container .descripcion{
+    position: relative;
+    top: -65px;
+    left: 300px;
+}
+.container .permiso{
+    position: relative;
+    top: -200px;
+    left: 800px;
+}
+.container .boton{
+    position: relative;
+    top: 30px;
+    left: 450px;
+    width: 120px;
+    border-radius: 10px;
+}
