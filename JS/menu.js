@@ -140,6 +140,9 @@ function cerrarModal(modalId) {
 }
 
 // Lógica para manejar los clics en los ítems del menú y cargar contenido dinámicamente
+// ... Tu código anterior ...
+
+// Lógica para manejar los clics en los ítems del menú y cargar contenido dinámicamente
 window.addEventListener("DOMContentLoaded", function() {
     const links = document.querySelectorAll(".menu a");
 
@@ -150,22 +153,13 @@ window.addEventListener("DOMContentLoaded", function() {
             links.forEach(innerLink => innerLink.classList.remove("active"));
             this.classList.add("active");
 
-            if (this.href.includes("/HTML/vistaprincipalSUPER.html")) {
-                const img = document.querySelector("img");
-                if (img) img.style.display = "block";
-                document.getElementById("main-content").innerHTML = "";
-                return;
-            }
-
             if (this.href && !this.href.includes("javascript:void(0);")) {
                 fetch(this.href)
                     .then(response => response.text())
                     .then(data => {
+                        // Solo actualiza el contenido dentro del elemento con ID "main-content"
                         document.getElementById("main-content").innerHTML = data;
-
-                        const img = document.querySelector("img");
-                        if (img) img.style.display = "none";
-
+                        
                         if (this.href.includes("/HTML/MisDatos.html")) {
                             initializeMisDatos();
                         }

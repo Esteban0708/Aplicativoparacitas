@@ -6,56 +6,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="/ESTILOS/Crear rol.css">
 </head>
-<body>
-    <h1 class="titulo">Crear Rol</h1>
-    <header> 
-        <nav class="navegacion">
-            <ul class="menu">
-                <li class="contenido"><a href="/HTML/VistaPrincipalAdmin.html">Inicio</a></li>
-                <li class="contenido"><a href="javascript:void(0)">Usuario</a>
-                    <ul class="submenu">
-                        <li class="contenido"><a href="/HTML/CrearUsuario.html">Crear Usuario</a></li>
-                        <li class="contenido"><a href="#">Visualizar Usuario</a></li>
-                    </ul>
-                </li>
-                <li class="contenido"><a href="javascript:void(0);">Rol</a>
-                    <ul class="submenu">
-                        <li class="contenido"><a href="/HTML/CrearRol.html">Crear rol</a></li>
-                        <li class="contenido"><a href="/HTML/VisualizarRol.html">Visualizar rol</a></li>
-                    </ul>
-                </li>
-                <li><a href="/HTML/Historial.html">Historial Usuarios</a></li>
-                <li><a href="javascript:void(0)">Agenda</a></li>
-                <li class="perfilusuario">
-                    <a href="javascript:void(0);">Esteban ramos</a>
-                    <ul class="submenu">
-                        <li class="contenido"><a href="/HTML/MisDatos.html">Mis datos</a></li>
-                        <li class="contenido"><a href="javascript:void(0);">Cerrar sesión</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body>   
     <div class="container">
-        <div class="rol">
-            <label for="nombre_rol">Nombre del Rol:</label>
-            <input type="text" id="nombre_rol" name="nombre_rol" placeholder="Nombre del rol" required><br><br>
-        </div>
-        <div class="descripcion">
-            <label for="descripcion_rol">Descripción del Rol:</label><br>
-            <textarea id="descripcion_rol" name="descripcion_rol" rows="4" cols="50" placeholder="Descripción del rol"></textarea><br><br>
-        </div>
-        <div class="permiso">
-            <label for="permisos">Permisos del Rol:</label>
-            <select id="permisos" name="permisos">
-            <option value="admin">Admin</option>
-            <option value="usuario">Usuario</option>
-            <option value="encargado">Encargado</option>
-        </select><br><br>
-        </div>
-        <div class="boton">
-            <button id="miBoton" class="boton-personalizado" onclick="miFuncion()">Crear Rol</button>
+        <h1 class="titulo">Crear Rol</h1>
+        <div class="contenedor2">
+            <div class="rol">
+                <label for="nombre_rol">Nombre del Rol:</label>
+                <input type="text" id="nombre_rol" name="nombre_rol" placeholder="Nombre del rol" required><br><br>
+            </div>
+            <div class="descripcion">
+                <label for="descripcion_rol">Descripción del Rol:</label><br>
+                <textarea id="area" name="descripcion_rol" rows="4" cols="50" placeholder="Descripción del rol"></textarea><br><br>
+            </div>
+            <div class="permiso">
+                <label for="permisos">Permisos del Rol:</label>
+                <select id="permisos" name="permisos">
+                <option value="admin">Admin</option>
+                <option value="usuario">Usuario</option>
+                <option value="encargado">Encargado</option>
+            </select><br><br>
+            </div>
+            <div class="boton">
+                <button id="miBoton" class="boton-personalizado" onclick="miFuncion()">Crear Rol</button>
+            </div>
         </div>
     </div>
+    <script src="/JS/menu.js"></script>
 </body>
 </html>

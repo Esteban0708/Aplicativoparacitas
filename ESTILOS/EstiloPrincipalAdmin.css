@@ -1,81 +1,88 @@
-*{
+/* Estilos para pantallas grandes */
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: linear-gradient(to left, rgb(4, 23, 83), rgb(247, 248, 250));
 }
-.navegacion{
+
+.navegacion {
     width: 1000px;
-    margin: 40px auto; 
-    border-bottom: 1px solid black;   
+    margin: 40px auto;
+    border-bottom: 1px solid black;
 }
-.navegacion ul{
-    
+
+.navegacion ul {
     list-style: none;
 }
-.container .titulo{
-    
+
+.container .titulo {
     position: relative;
     top: 10px;
     padding: 10px;
     left: 190px;
-    height: 50px; 
+    height: 50px;
     width: 600px;
     font-family: 'Times New Roman', Times, serif;
-
 }
-.menu > li{
-   position: relative;
-   display: inline-block;
 
+.menu > li {
+    position: relative;
+    display: inline-block;
 }
-.menu > li > a{
+
+.menu > li > a {
     display: block;
     padding: 15px 20px;
     font-family: 'Roboto', sans-serif;
-    font-size:20px;
+    font-size: 20px;
     color: #000000;
     text-decoration: none;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     background: rgba(5, 5, 165, 0.642);
     color: white;
-    text-decoration: underline; /* Subraya el enlace cuando se pasa el cursor por encima */
+    text-decoration: underline;
     transition: all .3s;
 }
-.submenu{
+
+.submenu {
     z-index: 1;
     position: absolute;
     background: white;
     border: 2px solid #bcbcbc;
-    width:180%;
+    width: 180%;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
-.submenu li a{
-    display: block;   
+
+.submenu li a {
+    display: block;
     padding: 15px;
     color: rgb(0, 0, 0);
     font-family: 'open sans';
     text-decoration: none;
-    border-radius: 25px; 
+    border-radius: 25px;
 }
-.menu li:hover .submenu{
+
+.menu li:hover .submenu {
     visibility: visible;
     opacity: 1;
-    
 }
-img{
+
+img {
     background: red;
     position: relative;
-    left: 900px;
+    left: 950px;
     top: 59px;
     height: 300px;
     width: 300px;
@@ -83,15 +90,15 @@ img{
     border-radius: 150px;
 }
 
-.perfilusuario{
+.perfilusuario {
     position: relative;
-    top: 0; 
-    right: 0; 
+    top: 0;
+    right: 0;
 }
 
 .navegacion .menu {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .perfilusuario {
@@ -104,8 +111,8 @@ img{
 
 .contenido {
     display: block;
-   
 }
+
 .item-seleccionado {
     background-color: blue;
     color: white;
@@ -115,16 +122,17 @@ img{
     background-color: rgba(5, 5, 165, 0.642);
     color: white;
 }
+
 .container {
     position: absolute;
     top: 55%;
     left: 38%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     width: 700px;
     height: 370px;
     font-family: Arial, sans-serif;
     margin: 10px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .line {
@@ -154,7 +162,8 @@ img{
     width: 80%;
     margin: 5px auto;
 }
-input{
+
+input {
     width: 110%;
     margin-top: 10px;
     padding: 10px;
@@ -164,10 +173,12 @@ input{
     outline: none;
     border-radius: 15px;
 }
-.inputs{
+
+.inputs {
     position: relative;
-    top:30px;
+    top: 30px;
 }
+
 #area {
     position: relative;
     top: 10px;
@@ -175,10 +186,32 @@ input{
     width: 90%;
     height: 100px;
     resize: none;
-    text-align: center; 
-    line-height: 90px; /* Esto es lo que centra el placeholder verticalmente */
+    text-align: center;
+    line-height: 90px;
 }
 
 #area::placeholder {
-    text-align: center; 
+    text-align: center;
+}
+
+/* Estilos para pantallas más pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+    .navegacion {
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .container .titulo {
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-height: 200px;
+    }
 }
