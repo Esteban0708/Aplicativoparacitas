@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@ body {
     border-radius: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     margin: 0;
-    height: 550px; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+    height: 550px; 
     position: absolute;
     top: 55%;
     left: 50%;
@@ -24,6 +23,7 @@ body {
 }
 label {
     font-family: 'Arial' sans-serif;
+    font-size: 23px;
     margin-top: 10px;
     flex: 1;
 }
@@ -35,27 +35,18 @@ label {
     height: 50px; 
     width: 600px;
     font-family: 'Times New Roman', Times, serif;
-
 }
 .contenedor2 .rol{
     position: absolute;
     width: 300px;
     top: 100px;
+    left: 85px;    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.permiso select {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-select option:hover{
-    background: #ccc;
-}
-input{
+
+.rol input{
     top: 190px;
     width:85%;
     margin-top: 10px;
@@ -68,42 +59,9 @@ input{
     border: 2px solid rgb(90, 84, 84);
 }
 
-#area {
-    position: relative;
-    top: 10px;
-    border-radius: 10px;
-    width: 85%;
-    height: 100px;
-    resize: none;
-    text-align: center;
-    line-height: 90px;
-}
-
-#area::placeholder {
-    text-align: center;
-}
-
-.container .descripcion{
-    position: absolute;
-    width: 400px;
-    top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 300px;
-}
-.container .permiso{
-    position: absolute;
-    width: 300px;
-    top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 700px;
-}
 .container .boton{
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%); 
     justify-content: center;   
@@ -115,7 +73,7 @@ button {
     margin-top: 10px;
     padding: 5px 10px;
     border: none;
-    background-color: #007BFF; /* Puedes cambiar a tu color preferido */
+    background-color: #007BFF;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -124,5 +82,27 @@ button {
 }
 
 button:hover {
-    background-color: #011b37; /* Puedes cambiar a tu color preferido para el hover */
+    background-color: #011b37; 
+}
+
+.Permisos{
+    position: absolute;
+    top: 270px;
+    left: 70px;
+    padding: 10px;
+    display: block;
+    width: 860px;   
+}
+.Permiso{
+    font-size: 20px;
+    margin-block: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.Permiso label {
+    display: inline-block;
+    margin-right: 10px; /* Ajusta el margen derecho para separar la etiqueta y el checkbox */
+}
+.Permisos input[type="checkbox"] {
+    margin-left: 30px; 
 }

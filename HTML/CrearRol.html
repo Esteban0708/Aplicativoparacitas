@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crear Rol</title>
     <link rel="stylesheet" href="/ESTILOS/Crear rol.css">
 </head>
 <body>   
@@ -11,20 +11,17 @@
         <h1 class="titulo">Crear Rol</h1>
         <div class="contenedor2">
             <div class="rol">
-                <label for="nombre_rol">Nombre del Rol:</label>
+                <label for="nombre_rol">Nuevo Rol:</label>
                 <input type="text" id="nombre_rol" name="nombre_rol" placeholder="Nombre del rol" required><br><br>
             </div>
-            <div class="descripcion">
-                <label for="descripcion_rol">Descripción del Rol:</label><br>
-                <textarea id="area" name="descripcion_rol" rows="4" cols="50" placeholder="Descripción del rol"></textarea><br><br>
-            </div>
-            <div class="permiso">
-                <label for="permisos">Permisos del Rol:</label>
-                <select id="permisos" name="permisos">
-                <option value="admin">Admin</option>
-                <option value="usuario">Usuario</option>
-                <option value="encargado">Encargado</option>
-            </select><br><br>
+            <div class="Permisos">
+                <label class="Permiso"><input type="checkbox" id="Permisos" />Administrar Roles</label>
+                <label class="Permiso"><input type="checkbox" id="Permisos" />Administrar Usuarios</label>
+                <label class="Permiso"><input type="checkbox" id="Permisos" />Administrar Cita</label>
+                <label class="Permiso"><input type="checkbox" id="Permisos" />Administrar Agenda</label>
+                <label class="Permiso"><input type="checkbox" id="Permisos" />Consultar Historial</label>
+                <label class="Permiso"><input type="checkbox" id="Permisos" />Consultar Usuarios</label>
+                <label class="Permiso"><input type="checkbox" id="Permisos" />Consultar Datos</label>
             </div>
             <div class="boton">
                 <button id="miBoton" class="boton-personalizado" onclick="miFuncion()">Crear Rol</button>
