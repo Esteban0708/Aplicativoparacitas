@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.Contenedor {
+    width: 70%;
+    margin: auto;
+    position: absolue;
+    left: 220px;
+    height: 400px;
+    top: 70px;
+    font-size: 20px;
+}
+
+.boton {
+    position: relative;
+    padding: 10px 40px;
+    border: 2px solid black;
+    background-color: rgb(155, 178, 185);
+    font-size: 14px;
+    font-weight: 600px;
+    color:  black;
+    outline: none;
+    transition:  all 400ms;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 200px;  
+    margin-left: 300px;  
+    margin-right: auto;
+    top: 520px;
+    border-radius: 30px;
+}
+.boton1 {
+    position: relative;
+    padding: 10px 40px;
+    border: 2px solid black;
+    background-color: rgb(155, 178, 185);
+    font-size: 14px;
+    font-weight: 600px;
+    color:  black;
+    outline: none;
+    transition:  all 400ms;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 200px;  
+    margin-left: 600px;  
+    margin-right: auto;
+    top: 460px;
+    border-radius: 30px;
+}
+.boton:hover{
+    background: #fff;
+    color: #46a2fd;
+    cursor: pointer;
+}
+.boton1:hover{
+    background: #fff;
+    color: #46a2fd;
+    cursor: pointer;
+}

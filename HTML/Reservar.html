@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar</title>
+    <link rel="stylesheet" href="/ESTILOS/EstiloReservar.css">
+</head>
+<body>
+    <div class="Contenedor">
+        <h1>Agendar Cita</h1>
+        <div class="selector1">
+            <select class="seleccion1" aria-label="Default select example">
+                    <option selected>Servicio</option>
+                    <option value="1">Uñas</option>
+                    <option value="2">Cabello</option>
+                    <option value="3">Otro</option>
+            </select>
+        </div>  
+        <div class="selector">
+            <select class="seleccion" aria-label="Default select example">
+                    <option selected>Encargado</option>
+                    <option value="1">Angie Velasquez</option>
+                    <option value="2">Esteban Ramos</option>
+                    <option value="3">Pepito Perez</option>
+            </select>
+        </div>  
+        <div class="contefechas">
+            <div class="input-group">
+                <label>Fecha Inicio</label>
+                <input type="date" value="" min="" max="">
+            </div>
+            <div class="input-group">
+                <label>Fecha Fin</label>
+                <input type="date" value="" min="" max="">
+            </div>
+        </div>
+        <div class="contetiempos">
+            <div class="input-group">
+                <label>Hora Inicio</label>
+                <input type="time" value="" min="" max="">
+            </div>
+            <div class="input-group">
+                <label>Hora Fin</label>
+                <input type="time" value="" min="" max="">
+            </div>
+        </div>
+        <div class="disponibilidad">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Servicio</th>
+                        <th>Empresa</th>
+                        <th>Solicitar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01-05-2023</td>
+                        <td>02:00 pm</td>
+                        <td>Uñas</td>
+                        <td>Spa Nails</td>
+                        <td>
+                            <button class="Solicitar">Solicitar</button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>01-05-2023</td>
+                        <td>02:30 pm</td>
+                        <td>Uñas</td>
+                        <td>Spa Nails</td>
+                        <td>
+                            <button class="Solicitar">Solicitar</button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="boton">Guardar</button>
+        <button class="boton1">Terminar</button>
+    </div>
+</body>
+</html>

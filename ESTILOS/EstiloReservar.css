@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.Contenedor {
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    left: 220px;
+    height: 600px;
+    top: 100px;
+    font-size: 20px;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+.seleccion1 {
+    position: absolute;
+    width: 350px; /* Ajusta el ancho según tus preferencias */
+    top: 75px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+.seleccion {
+    position: relative;
+    width: 350px; /* Ajusta el ancho según tus preferencias */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+    left: 600px;
+}
+
+input[type="date"],
+input[type="time"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px; /* Ajusta el tamaño de fuente según tus preferencias */
+    height: 15px;
+}
+
+.contefechas{
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    top: 150px;
+}
+.contetiempos{
+    position: absolute;
+    left: 650px;
+    width: 300px;
+    top: 150px;
+}
+
+.disponibilidad {
+    position: absolute;
+    top: 320px;
+    left: 0px;
+    height: 50px; 
+    width: 5px;
+}
+table{
+    width: 950px; 
+    color: black;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;  /* Centra el contenido de las celdas */
+}
+thead{
+    background: #a4aec9;
+    border-color: black;
+}
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    border: solid 1px rgb(181, 165, 177);
+}
+td .Solicitar{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+.Solicitar:hover {
+    background: #fff;
+    color: #46a2fd;
+    cursor: pointer;
+}
+.boton {
+    position: relative;
+    padding: 10px 40px;
+    border: 2px solid black;
+    background-color: rgb(155, 178, 185);
+    font-size: 14px;
+    font-weight: 600px;
+    color: black;
+    outline: none;
+    transition: all 400ms;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-left: 300px;
+    margin-right: auto;
+    top: 380px;
+    border-radius: 30px;
+}
+
+.boton1 {
+    position: relative;
+    padding: 10px 40px;
+    border: 2px solid black;
+    background-color: rgb(155, 178, 185);
+    font-size: 14px;
+    font-weight: 600px;
+    color: black;
+    outline: none;
+    transition: all 400ms;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-left: 600px;
+    margin-right: auto;
+    top: 320px;
+    border-radius: 30px;
+}
+
+.boton:hover {
+    background: #fff;
+    color: #46a2fd;
+    cursor: pointer;
+}
+
+.boton1:hover {
+    background: #fff;
+    color: #46a2fd;
+    cursor: pointer;
+}

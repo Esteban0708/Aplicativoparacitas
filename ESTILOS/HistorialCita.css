@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  thead {
+    background-color: #ccc;
+  }
+  
+  th {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  table {
+    order: -1;
+  }
