@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agenda Empleado</title>
     <link rel="stylesheet" href="/ESTILOS/EstiloAgendaEmpleado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
 </head>
 <body>
- 
+    <div class="calendario" id="calendar">
+        <script>
+            $(document).ready(function() {
+              $('#calendar').fullCalendar({
+                header: {
+                  left: 'prev,next,today',
+                  center: 'title',
+                  right: 'month,agendaWeek,agendaDay'
+                },
+                defaultView: 'month', 
+                events: [
+                  {
+                    title: 'Clases/Trabajo',
+                    start: '2023-11-09T09:00:00',
+                    end: '2023-11-09T10:30:00'
+                  },
+                  {
+                    title: 'Estudio/Trabajo',
+                    start: '2023-11-09T11:00:00',
+                    end: '2023-11-09T12:30:00'
+                  },
+                ]
+              });
+            });  
+        </script>
+    </div>
 </body>
 </html>

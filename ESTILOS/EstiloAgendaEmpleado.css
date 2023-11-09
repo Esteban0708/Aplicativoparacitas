@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    top: 10px;
+    width: 1300px;
+    padding: 100px;
+    height: 200px;
+    background-color: linear-gradient(to left, rgb(4, 23, 83), rgb(247, 248, 250));;
+}
+.calendario{
+    position: relative;
+    left: 110px;
+    
+}
