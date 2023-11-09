@@ -58,18 +58,23 @@ label {
     border-radius: 15px;
     border: 2px solid rgb(90, 84, 84);
 }
-
-.container .boton{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    justify-content: center;   
-    width: 120px;
-    border-radius: 50%;
-}
-
-button {
+.fila-botones {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    top: 150px;
+    left: 40px;
+  }
+  
+  .boton-personalizado {
+    flex: 1;
+    margin-right: 10px;
+    max-width: 100px; /* Ajusta el ancho máximo según tus necesidades */
+  }
+  
+  button {
+    position: relative;
     margin-top: 10px;
     padding: 5px 10px;
     border: none;
@@ -78,12 +83,13 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #011b37; 
-}
+    font-size: 12px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    max-width: 100px; /* Ajusta el ancho máximo según tus necesidades */
+  }
+  
+  button:hover {
+    background-color: #011b37;
+  }
 
 .Permisos{
     position: absolute;

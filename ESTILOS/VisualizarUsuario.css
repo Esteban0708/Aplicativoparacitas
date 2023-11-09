@@ -9,32 +9,27 @@ body {
     position: relative;
     font-family: Arial, sans-serif;
     top: -10px;
-    width: 500px;
+    width: 1000px;
     padding: 100px;
     height: 400px;
     left: 100px;
 }
-.contenedor{
-    width: 200px;
-    height: 270px;
+.contenedortodo{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    left: 0px;
 }
-  
-.lista > button {
-    height: 30px;
-    display: flex;
-    width: 150px;
-    flex-direction: row;
+h1{
+    text-align: center;
 }
-.boton {
-    margin-bottom: 10px; 
-    padding: 10px;
-    row-gap: 10px;
-}
+
+
 button {
     margin-top: 10px;
     padding: 5px 10px;
     border: none;
-    background-color: #d400ff;
+    background-color: rgb(118, 138, 167);
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -43,6 +38,36 @@ button {
 button:hover {
     background-color: rgb(230, 135, 219); 
 }
+.historial{
+    top: 80px;
+    position: relative;
+    width: 1100px;
+  }
+  table {
+      width: 100%;
+      background-color: #fff;
+    }
+    
+    thead {
+      background-color: #e1e0e0;
+    }
+    
+    th {
+      text-align: center;
+      padding: 10px;
+    }
+    
+    td {
+      padding: 10px;
+    }
+    table {
+      order: -1;
+    }
+    .btn-editar,
+    .btn-eliminar {
+      padding: 10px 15px;
+      font-size: 16px;
+    }
 .contenedorDatos {
     position: absolute;
     top: 355px;
@@ -51,10 +76,15 @@ button:hover {
     z-index: 1;
     width: 900px;
     height: 495px;
+    background-color: white;
 }
 .contenedorDatos h1 {
     padding: 15px;
     text-align: center;
+}
+.historial tbody tr:hover td {
+  background-color: rgb(167, 200, 223); /* Cambia el color de fondo de las celdas al hacer hover */
+  color: #333; /* Cambia el color del texto de las celdas al hacer hover */
 }
 .inputs {
     padding: 30px;

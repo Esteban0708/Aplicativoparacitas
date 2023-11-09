@@ -5,16 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar Usuario</title>
     <link rel="stylesheet" href="/ESTILOS/VisualizarUsuario.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
-        <div class="contenedor">
+    <div class="contenedortodo">
+        
             <h1>Usuarios</h1>
-            <div class="lista">
-                <button class="boton" id="angieButton">Angie Velasquez</button>
-                <button class="boton" id="estebanButton">Edinson Ramos</button>
-                <button class="boton" id="pepitoButton">Pepito Perez</button>
+            <div class="historial">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>N°</th>
+                      <th>Nuip</th>
+                      <th>Nombres</th>
+                      <th>Apellidos</th>
+                      <th>Telefono</th>
+                      <th>Correo</th>
+                      <th>Rol</th>
+                      <th>Opción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>1006507972</td>
+                      <td>Esteban</td>
+                      <td>Ramos</td>
+                      <td>3102268473</td>
+                      <td>edi.ramos@udla.edu.co</td>
+                      <td>Admin</td>
+                      <td>
+                        <button class="btn-editar">
+                          <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="btn-eliminar">
+                          <i class="fas fa-trash-alt"></i> 
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1006507972</td>
+                        <td>Esteban</td>
+                        <td>Ramos</td>
+                        <td>3102268473</td>
+                        <td>edi.ramos@udla.edu.co</td>
+                        <td>Admin</td>
+                      <td>
+                        <button class="btn-editar" onclick="redirigirAVistaEditar()">
+                            <i class="fas fa-edit"></i> Editar
+                          </button>
+                        <button class="btn-eliminar">
+                          <i class="fas fa-trash-alt"></i> 
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
-        </div>
+        
         <div class="contenedorDatos" style="display: none;">
             <h1>Datos Personales</h1>
             <div class="inputs">
@@ -69,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <script src="/JS/VisualizarUsuario.js"></script>
-
+    </div>
+    <script src="/JS/VisualizarUsuario.js"></script>
 </body>
 </html>
