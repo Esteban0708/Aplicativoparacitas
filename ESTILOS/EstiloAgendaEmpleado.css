@@ -17,5 +17,15 @@ body {
 .calendario{
     position: relative;
     left: 110px;
+    top: 40px;
     
+}
+.seleccion {
+    position: relative;
+    width: 350px; /* Ajusta el ancho según tus preferencias */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+    left: 500px;
 }
